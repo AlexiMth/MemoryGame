@@ -1,16 +1,19 @@
 package application;
 
 import java.util.List;
+import java.util.Random;
+
+import javafx.collections.ObservableList;
+import javafx.scene.layout.GridPane;
 
 public class MemoryGameModel {
     
-    private List<Card> cards;
+    private ObservableList<Card> cards;
     private int score;
     private int remainingTime;
 
-    public MemoryGameModel(int numberOfCards) {
-        // Initialiser les cartes et les mélanger
-        // Initialiser les scores et le temps restant
+    public MemoryGameModel() {
+    	
     }
 
     public List<Card> getCards() {
