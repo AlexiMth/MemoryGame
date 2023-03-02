@@ -5,40 +5,50 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
 <BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MemoryGameController">
    <left>
       <BorderPane prefHeight="200.0" prefWidth="250.0" style="-fx-background-color: #D3D3D3;" BorderPane.alignment="CENTER">
          <top>
-            <Label alignment="CENTER" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #DCDCDC;" text="Memory Game" textAlignment="CENTER" BorderPane.alignment="CENTER">
+            <Label alignment="CENTER" minHeight="100.0" minWidth="250.0" prefHeight="100.0" prefWidth="250.0" style="-fx-background-color: #DCDCDC;" text="Memory Game" textAlignment="CENTER" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Arial Black" size="24.0" />
                </font>
             </Label>
          </top>
          <bottom>
-            <Button mnemonicParsing="false" text="Lancer" BorderPane.alignment="CENTER">
+            <Button fx:id="startButton" mnemonicParsing="false" onAction="#handleStartButton" text="Lancer" BorderPane.alignment="CENTER">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
                <BorderPane.margin>
-                  <Insets bottom="30.0" />
+                  <Insets bottom="40.0" />
                </BorderPane.margin>
             </Button>
          </bottom>
-         <right>
-            <Label prefHeight="200.0" text="Choisis ta difficulté :" textAlignment="CENTER" wrapText="true" BorderPane.alignment="CENTER">
-               <font>
-                  <Font name="Arial" size="17.0" />
-               </font>
-            </Label>
-         </right>
          <center>
-            <ChoiceBox prefWidth="150.0" BorderPane.alignment="CENTER" />
+            <VBox BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefWidth="500.0" text="Choisis ta difficulté :" textAlignment="CENTER" wrapText="true">
+                     <font>
+                        <Font name="Arial" size="17.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox prefWidth="150.0">
+                     <VBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </VBox.margin>
+                  </ChoiceBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="30.0" />
+               </BorderPane.margin>
+            </VBox>
          </center></BorderPane>
    </left>
    <center>
-      <BorderPane prefHeight="800.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
+      <BorderPane minHeight="800.0" minWidth="700.0" prefHeight="800.0" prefWidth="700.0" BorderPane.alignment="CENTER" />
    </center>
 </BorderPane>

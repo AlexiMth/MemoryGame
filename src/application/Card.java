@@ -5,6 +5,7 @@ import javafx.scene.image.Image;
 public class Card {
     private int id;
     private Image image;
+    private Image backimage;
     private boolean isFlipped;
     private boolean isMatched;
 
@@ -13,6 +14,7 @@ public class Card {
         this.image = image;
         this.isFlipped = false;
         this.isMatched = false;
+        this.backimage = new Image("file:cartesimages.doscarte.png");
     }
 
     public int getId() {
@@ -22,7 +24,11 @@ public class Card {
     public Image getImage() {
         return image;
     }
-
+    
+    public Image getBackImage() {
+    	return backimage;
+    }
+    
     public boolean isFlipped() {
         return isFlipped;
     }

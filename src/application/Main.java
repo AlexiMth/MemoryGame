@@ -37,16 +37,4 @@ public class Main extends Application {
 	public void stop() throws Exception {
 		super.stop();
 	}
-	
-    public void updateCards(List<Card> cards) {
-        // mise à jour des cartes dans l'interface utilisateur
-    }
-    
-    public void updateScore(int score) {
-        // mise à jour du score dans l'interface utilisateur
-    }
-
-    public void updateTime(int timeRemaining) {
-        // mise à jour du temps restant dans l'interface utilisateur
-    }
 }

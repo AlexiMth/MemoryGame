@@ -1,24 +1,48 @@
 package application;
 
+import java.util.Random;
+
 import javafx.collections.FXCollections;
-import javafx.collections.ListChangeListener;
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.FilteredList;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
+import javafx.scene.layout.GridPane;
 
 public class MemoryGameController {
-    private ObservableList<Card> cartes;
-    private FilteredList<Card> cartesRestantes;
-    private int score;
-    private int pairesRestantes;
+    
+    private MemoryGameModel model;
+    private MemoryGameView view;
+    
+    @FXML
+    private GridPane gp;
+    
+    @FXML
+    ListView<Card> listView;
+    
+    ObservableList<Card> cardList = FXCollections.observableArrayList();
+    
+    @FXML
+    private Button startButton;
 
-    public ObservableList<Card> getCartesRestantes() {
-        return cartesRestantes;
+    @FXML
+    private void handleCardSelection(Card card) {
+        // Gérer la sélection de cartes et mettre à jour le modèle et la vue en conséquence
+        // Vérifier si le jeu est terminé
     }
 
-    public void choisirCarte(Card carte) {
+    @FXML
+    private void handleRestartButtonClick() {
+        
+    }
+    
+    @FXML
+    private void handleStartButton(ActionEvent evt) {
+    	gp = new GridPane();
+    	Random generator = new Random();
     	
     }
+    
+    
 }
