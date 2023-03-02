@@ -1,20 +1,24 @@
 package application;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class MemoryGameController {
-    private MemoryGameModel model;
-    private Main view;
+    private ObservableList<Card> cartes;
+    private FilteredList<Card> cartesRestantes;
+    private int score;
+    private int pairesRestantes;
 
-    public MemoryGameController(MemoryGameModel model, Main view) {
-        this.model = model;
-        this.view = view;
-        // initialisation du contrôleur
+    public ObservableList<Card> getCartesRestantes() {
+        return cartesRestantes;
     }
 
-    public void handleCardSelection(Card card) {
-        // gestion de la sélection d'une carte
+    public void choisirCarte(Card carte) {
+    	
     }
-
-    public void handleRestartGame() {
-        // gestion du redémarrage du jeu
-    }	
 }
