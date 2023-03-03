@@ -103,8 +103,6 @@ public class MemoryGameController {
         }
 
         grid();
-        System.out.println(numberPair);
-        System.out.println(cardList.size());
     }
 
     @FXML
@@ -132,9 +130,13 @@ public class MemoryGameController {
 	            alert.showAndWait();
             });
         }
+        
+        if (numberPair == cardList.size()) {
+        	timeline.stop();
+        }
     }
     
-    private void finishedGame() {        
+    private void finishedGame() {    
         Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Fin du jeu");
         alert.setHeaderText(null);
