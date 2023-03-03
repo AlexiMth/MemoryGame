@@ -14,7 +14,7 @@ public class Card {
         this.image = image;
         this.isFlipped = false;
         this.isMatched = false;
-        this.backimage = new Image("file:cartesimages.doscarte.png");
+        this.backimage = new Image("file:src/resources/doscarte.png", 240, 240, false, false);
     }
 
     public int getId() {
