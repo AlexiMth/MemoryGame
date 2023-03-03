@@ -22,9 +22,9 @@ Les différentes difficultés sont affichées mais n'ont pas été implémentée
 
 J'ai eu du mal à prendre en main JavaFX. Etant donné le peu d'heures que nous avions eu et que nous n'avons pas le droit de le travailler en dehors des heures prévues, j'ai eu du mal à avancer au départ surtout que j'avais, sans m'en rendre compte, imbriqué deux BorderPane ce qui m'a énormément bloqué jusqu'à 2h avant la fin du projet. Ces BorderPanes cachés les cartes, ce qui me faisait croire pendant plusieurs heures que mon code n'affichait pas bien les cartes. Etant donné que je ne suis pas à l'aise en Java, j'ai eu du mal à m'approprier ce projet mais j'ai pu faire l'essentiel.
 
-### Comment j'aurais-pu mieux m'organiser ?
+### Comment les soucis rencontrés auraient pu être évités
 
-Pour mieux démarrer le projet, j'aurais pu essayer de faire une petite conception, afin de voir plus clair sur ce qui était attendu. Je suis assez désordonné de base, ce qui rend le projet plus compliqué puisque je jonglais entre les classes. 
+Pour mieux démarrer le projet, j'aurais pu essayer de faire une petite conception, afin de voir plus clair sur ce qui était attendu. Je suis assez désordonné de base, ce qui rend le projet plus compliqué puisque je jonglais entre les classes.
 
 ### Remarques sur ce projet
 
